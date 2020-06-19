@@ -14,15 +14,11 @@ function minifycss() {
       },
   }))
 
- 
-  .pipe(gulp.dest('dist/styles/'))
- 
- 
   .pipe(gulp.dest('dist'));
 }
 
 function babeljs() {
-  return gulp.src("js/*.js")
+  return gulp.src("js/**/*.js")
     .pipe(babel())
     .pipe(gulp.dest("dist"));
 }
