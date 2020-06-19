@@ -1,5 +1,5 @@
 
- // turn on foundation
+ // turn on foundations
         $(document).foundation();
         
         $(document).ready(function(){
