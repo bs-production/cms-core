@@ -2,7 +2,7 @@ let gulp = require('gulp');
 let cleanCSS = require('gulp-clean-css');
 // let babel = require("gulp-babel");
 let concat = require("gulp-concat");
-let rename = require('gulp-rename');
+// let rename = require('gulp-rename');
 let uglify = require('gulp-uglify-es').default;
 
 
@@ -23,8 +23,8 @@ function minifycss() {
 
 function minifyjs() {
   return gulp.src("js/*.js")
-  .pipe(rename('uglify.js'))
   .pipe(uglify())
+  .pipe(concat('bundle.js'))
   .pipe(gulp.dest("dist"));
 }
 

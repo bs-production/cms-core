@@ -1,0 +1,28 @@
+#tabs, #tabs-light-bar { border: 0; background:transparent;}
+/** Eliminates border and background around entire container/parent **/
+
+#tabs .ui-widget-header, #tabs-light-bar .ui-widget-header  { 
+	background:none; padding-left:0; padding-top:0; -moz-border-radius-topleft: 0; -webkit-border-top-left-radius: 0; border-top-left-radius: 0; -moz-border-radius-topright: 0; -webkit-border-top-right-radius: 0; border-top-right-radius: 0; -moz-border-radius-bottomleft: 0px; -webkit-border-bottom-left-radius: 0px; border-bottom-left-radius: 0px; -moz-border-radius-bottomright: 0px; -webkit-border-bottom-right-radius: 0px; border-bottom-right-radius: 0px; }
+/** Eliminates background, Moves Tabs over to left, if tabs have a background removes border radius to top left and right corners to header, not tabbed nav **/
+
+#tabs .ui-widget-header{ border:0;}
+/** Eliminate border around header for default only**/
+
+#tabs .ui-corner-top, #tabs-light-bar .ui-corner-top {-moz-border-radius-topleft: 0px; -webkit-border-top-left-radius: 0px; border-top-left-radius: 0px; -moz-border-radius-topright: 0; -webkit-border-top-right-radius: 0; border-top-right-radius: 0;}
+/** Eliminates rounded corners on tabs **/
+
+#tabs .ui-tabs-panel { border:1px solid #aaa; margin-top:-1px; background-color:#f9fafc; } 
+/** Adds 1px border around content panel area, bumps up panel 1px **/
+
+#tabs .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { height: 30px; }
+/**Give the Default State of Tabs a 1px height smaller than active state **/
+
+#tabs .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { height: 31px; background: #f0f0f0;
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f0f0), color-stop(100%,#f9fafc));
+   background: -webkit-linear-gradient(top, #f0f0f0 0%,#f9fafc 100%);
+   background: -moz-linear-gradient(top, #f0f0f0 0%,  #f9fafc 100%);
+   background: -ms-linear-gradient(top, #f0f0f0 0%,#f9fafc 100%);
+   background: -o-linear-gradient(top, #f0f0f0 0%,#f9fafc 100%);
+   background: linear-gradient(to bottom, #f0f0f0 0%,#f9fafc 100%); /* W3C */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f9fafc',GradientType=0 ); /* IE6-9 */  border-bottom:1px solid #fff;}
+/*Gives Active Tab 1px height taller and hides the border with a bottom white border **/
