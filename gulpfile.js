@@ -1,9 +1,9 @@
 let gulp = require('gulp');
 let cleanCSS = require('gulp-clean-css');
-let babel = require("gulp-babel");
+// let babel = require("gulp-babel");
 let concat = require("gulp-concat");
 let rename = require('gulp-rename');
-let uglify = require("gulp-uglify");
+let uglify = require('gulp-uglify-es').default;
 
 
 function minifycss() {
@@ -23,8 +23,6 @@ function minifycss() {
 
 function minifyjs() {
   return gulp.src("js/*.js")
-  .pipe(babel({}))
-  .pipe(gulp.dest("dist"))
   .pipe(rename('uglify.js'))
   .pipe(uglify())
   .pipe(gulp.dest("dist"));
