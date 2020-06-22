@@ -1,8 +1,0 @@
-/* SERVICE AREA MODULE */
-.service_area.module                    { display: table; border: none; clear: both; }
-.service_area.module a                  { text-decoration: underline; }
-.service_area_row                       { background: #F0F0F0; display: table-row; }
-.service_area_header                    { background: #828282; color: #fff; font-weight: bold; }
-.service_area_cell                      { display: table-cell; padding: 5px; border: 1px solid #fff; }
-.widget_tags_category                   { font-weight: bold; margin-top: 10px; }
-/* END SERVICE AREA MODULE */
