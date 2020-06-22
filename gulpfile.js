@@ -23,9 +23,7 @@ function minifycss() {
 
 function minifyjs() {
   return gulp.src("js/*.js")
-  .pipe(babel({
-    presets: ['@babel/env']
-  }))
+  .pipe(babel({}))
   .pipe(gulp.dest("dist"))
   .pipe(rename('uglify.js'))
   .pipe(uglify())
